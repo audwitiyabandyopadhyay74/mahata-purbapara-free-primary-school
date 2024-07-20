@@ -471,8 +471,8 @@
         }
         .navbarformobile {
             display: flex;
-            justify-content: space-between;
-            gap: 80px;
+            /* justify-content: space-between; */
+            gap: 128px;
             /* position: relative; */
         }
         .navbarformobile>.logo {
@@ -490,6 +490,7 @@
             background-repeat: no-repeat;
             transition: 0.1s;
             z-index: 10000;
+            /* margin-left: 40px; */
         }
         .navbarformobile>.hamburger-icon:hover {
             cursor: pointer;
@@ -613,7 +614,7 @@
             flex-wrap: wrap; */
         }
         #apply-now-button {
-            margin-bottom: 40px;
+            margin-bottom: -1px;
             height: 20vh;
         }
         #know-more {
