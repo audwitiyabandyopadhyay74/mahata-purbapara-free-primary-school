@@ -1,23 +1,21 @@
-* {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-:root {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-
-/* 
+    * {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+        transition: all 1.5s ease;
+        box-sizing: border-box;
+    }
+    
+     :root {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    /* 
 *:hover {
     cursor: url('./assets/Image/react.svg'), auto;
 } */
-
-
-/* 
+    /* 
 ::-webkit-scrollbar-track {
     height: 10px;
 }
@@ -33,215 +31,213 @@
 ::-webkit-scrollbar {
     height: 10px;
 } */
-
-::-webkit-file-upload-button {
-    margin-top: 20px;
-    width: 40%;
-    height: 4vh;
-    background-color: #000;
-    color: #fff;
-    display: none;
-}
-
-body {
-    background-color: #fff;
-    color: #000;
-}
-
-.nav {
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 100%;
-    height: 8vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-}
-
-.nav>.logo {
-    font-family: arial;
-    font-size: 2.5vh;
-}
-
-.nav>.links {
-    width: 25%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-right: 20px;
-}
-
-.nav>.links>button {
-    border-color: transparent;
-    background-color: transparent;
-    transition: all 0.5s ease-in-out;
-}
-
-.links button::before {
-    background-color: #d87a00;
-    width: 100px !important;
-    height: 5px !important;
-}
-
-.nav>.links>button:hover {
-    /*    cursor: url('./assets/react.svg'), auto;*/
-    cursor: pointer;
-    border-bottom-color: #000;
-}
-
-.banner {
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("https://th.bing.com/th/id/R.b932eb9d486c2aa9b0b2edbbb03d0c61?rik=xzv51Lph6xXaYQ&riu=http%3a%2f%2ftrendingweblog.com%2fwp-content%2fuploads%2f2018%2f07%2fdelhi_public_school.jpg&ehk=JqHj4GhI9JD4qam6RLgdpFp4U5DWU2wBhqhvZZ38ACs%3d&risl=&pid=ImgRaw&r=0");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    flex-direction: column;
-    margin-top: -100px;
-    z-index: 0;
-}
-
-.banner>.text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.banner>.text>span:first-child {
-    font-size: 50px;
-}
-
-.banner>.text>button {
-    width: 20vh;
-    height: 5vh;
-    border-radius: 5px;
-    background-color: #000;
-    color: #fff;
-    border: black solid;
-    transition: all 0.5s ease;
-}
-
-.banner>.text>button:hover {
-    background-color: transparent;
-    border-color: #000;
-    color: #000;
-    cursor: pointer;
-}
-
-#heading {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    font-size: 4.5vh;
-}
-
-.Feature {
-    width: 45vh;
-    height: 50vh;
-    border-radius: 30px;
-    background-color: #ddd;
-    margin-top: 30px;
-    transition: all .1s ease-in-out;
-}
-
-.Feature:hover {
-    transform: translateY(-30px);
-    cursor: pointer;
-}
-
-.Feature>img {
-    width: 42vh;
-    margin-top: 1vh;
-    margin-left: 1vh;
-    border-radius: 20px;
-    height: 25vh;
-    background-color: #aaa;
-}
-
-.Feature>span {
-    display: flex;
-    justify-content: center;
-    font-size: 2.5vh;
-    text-align: center;
-    width: 45vh;
-}
-
-.Feature>p {
-    position: relative;
-    bottom: -10px;
-    left: 5px;
-}
-
-.Features {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-#note {
-    font-size: 17px;
-    margin-top: 25px;
-    position: absolute;
-    right: 40px;
-}
-
-.admissions-banner {
-    /* background-image: url('../src/Assets/Image/Admissions Are Closed For This Year.png'); */
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.admissions-banner>.text {
-    margin-left: 9vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.admissions-banner>.text>h1 {
-    font-size: 10vh;
-}
-
-.admissions-banner>.text>p {
-    font-size: 5vh;
-}
-
-.admissions-banner>.text>button {
-    width: 40vh;
-    height: 6vh;
-    background-color: #000;
-    color: #fff;
-    transition: all 1s ease;
-    border-radius: 5px;
-    border: #000 solid;
-}
-
-.admissions-banner>.text>button:hover,
-.admissions-banner>.text>button:active,
-.admissions-banner>.text>button:focus {
-    background-color: transparent;
-    color: #000;
-    cursor: pointer;
-}
-
-.admissions-banner>img {
-    word-wrap: break-word;
-}
-
-
-/* .admissions-banner>.skew1 {
+    
+     ::-webkit-file-upload-button {
+        margin-top: 20px;
+        width: 40%;
+        height: 4vh;
+        background-color: #000;
+        color: #fff;
+        display: none;
+    }
+    
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+    
+    .nav {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+    }
+    
+    .nav>.logo {
+        font-family: arial;
+        font-size: 2.5vh;
+    }
+    
+    .nav>.links {
+        width: 25%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 20px;
+    }
+    
+    .nav>.links>button {
+        border-color: transparent;
+        background-color: transparent;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .links button::before {
+        background-color: #d87a00;
+        width: 100px !important;
+        height: 5px !important;
+    }
+    
+    .nav>.links>button:hover {
+        /*    cursor: url('./assets/react.svg'), auto;*/
+        cursor: pointer;
+        border-bottom-color: #000;
+    }
+    
+    .banner {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("https://th.bing.com/th/id/R.b932eb9d486c2aa9b0b2edbbb03d0c61?rik=xzv51Lph6xXaYQ&riu=http%3a%2f%2ftrendingweblog.com%2fwp-content%2fuploads%2f2018%2f07%2fdelhi_public_school.jpg&ehk=JqHj4GhI9JD4qam6RLgdpFp4U5DWU2wBhqhvZZ38ACs%3d&risl=&pid=ImgRaw&r=0");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        flex-direction: column;
+        margin-top: -100px;
+        z-index: 0;
+    }
+    
+    .banner>.text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .banner>.text>span:first-child {
+        font-size: 50px;
+    }
+    
+    .banner>.text>button {
+        width: 20vh;
+        height: 5vh;
+        border-radius: 5px;
+        background-color: #000;
+        color: #fff;
+        border: black solid;
+        transition: all 0.5s ease;
+    }
+    
+    .banner>.text>button:hover {
+        background-color: transparent;
+        border-color: #000;
+        color: #000;
+        cursor: pointer;
+    }
+    
+    #heading {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 4.5vh;
+    }
+    
+    .Feature {
+        width: 45vh;
+        height: 50vh;
+        border-radius: 30px;
+        background-color: #ddd;
+        margin-top: 30px;
+        transition: all .3s ease-in-out;
+    }
+    
+    .Feature:hover {
+        transform: translateY(-30px);
+        cursor: pointer;
+    }
+    
+    .Feature>img {
+        width: 42vh;
+        margin-top: 1vh;
+        margin-left: 1vh;
+        border-radius: 20px;
+        height: 25vh;
+        background-color: #aaa;
+    }
+    
+    .Feature>span {
+        display: flex;
+        justify-content: center;
+        font-size: 2.5vh;
+        text-align: center;
+        width: 45vh;
+    }
+    
+    .Feature>p {
+        position: relative;
+        bottom: -10px;
+        left: 5px;
+    }
+    
+    .Features {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    #note {
+        font-size: 17px;
+        margin-top: 25px;
+        position: absolute;
+        right: 40px;
+    }
+    
+    .admissions-banner {
+        /* background-image: url('../src/Assets/Image/Admissions Are Closed For This Year.png'); */
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .admissions-banner>.text {
+        margin-left: 9vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .admissions-banner>.text>h1 {
+        font-size: 10vh;
+    }
+    
+    .admissions-banner>.text>p {
+        font-size: 5vh;
+    }
+    
+    .admissions-banner>.text>button {
+        width: 40vh;
+        height: 6vh;
+        background-color: #000;
+        color: #fff;
+        transition: all 1s ease;
+        border-radius: 5px;
+        border: #000 solid;
+    }
+    
+    .admissions-banner>.text>button:hover,
+    .admissions-banner>.text>button:active,
+    .admissions-banner>.text>button:focus {
+        background-color: transparent;
+        color: #000;
+        cursor: pointer;
+    }
+    
+    .admissions-banner>img {
+        word-wrap: break-word;
+    }
+    /* .admissions-banner>.skew1 {
     width: 250px !important;
     height: 250px !important;
     background-color: #000000;
@@ -252,213 +248,337 @@ body {
     margin-right: -350px;
     z-index: 100;
 } */
-
-.basic-information-card {
-    background-color: #ddd;
-    height: 79.50vh;
-    width: 55vh;
-    border-radius: 30px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.basic-information-card>img {
-    mix-blend-mode: color-burn;
-    /* filter: brightness(95%); */
-    width: 43vh;
-    background-color: #fff;
-    margin-top: 10px;
-    border-radius: 35px;
-}
-
-.basic-information-card>h1 {
-    font-weight: 100;
-}
-
-.basic-information-card:hover {
-    transform: translateY(-30px);
-    cursor: pointer;
-}
-
-.basic-information {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.cards {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    flex-wrap: wrap;
-}
-
-.mini-about-us-section,
-.about-us-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.mini-about-us-section>.content,
-.about-us-section>.content {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.mini-about-us-section>.content>p,
-.about-us-section>.content>p {
-    width: 400px;
-}
-
-.mini-about-us-section>#know-more {
-    position: relative;
-    width: 40vh;
-    height: 5vh;
-    border: 1px solid #000;
-    background-color: #000;
-    color: #fff;
-    border-radius: 5px;
-    transition: all 0.5s ease-in-out;
-}
-
-.mini-about-us-section>#know-more:hover {
-    background-color: transparent !important;
-    color: #000;
-    cursor: pointer;
-}
-
-.admission-form,
-.admission-form>form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    text-align: center;
-    align-items: center;
-    width: 100vw;
-}
-
-::-webkit-input-placeholder {
-    color: #000;
-}
-
-.admission-form>form>input {
-    height: 4vh;
-    border-color: transparent transparent #000 transparent;
-    outline: none;
-    width: 80vw;
-    margin: 0 0 0 10vw;
-}
-
-.admission-form>form>button {
-    width: 35vh;
-    height: 5vh;
-    border-radius: 5px;
-    border-color: transparent;
-    position: relative;
-}
-
-.class {
-    display: flex;
-    flex-direction: column;
-}
-
-.admission-form>form>button:hover {
-    background-color: #aaaaaac2;
-    cursor: pointer;
-}
-
-.contact-detail {
-    width: 60vh;
-    height: 40vh;
-    background: #ddd;
-    margin-left: 20px;
-    padding: 20px;
-    border-radius: 15px;
-}
-
-.contact-detail:hover,
-#gmf:hover {
-    transform: scale(1.01);
-    cursor: pointer;
-}
-
-#line {
-    height: 25vh;
-    width: .1vh;
-    background-color: #000;
-}
-
-#gmf {
-    border: none;
-    width: 60vh;
-    height: 40vh;
-}
-
-.deatails {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    overflow: hidden;
-}
-
-.footer>.content {
-    height: 30vw;
-    width: 99vw;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    margin-top: 1vw;
-}
-
-.footer>.content>.logo>img {
-    height: 25vh;
-    width: 25vh;
-    mix-blend-mode: color-burn;
-}
-
-.footer>.content>div {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.footer>.content>div>span {
-    margin-right: px;
-}
-
-.footer>.content>div>button {
-    border-color: transparent;
-    background-color: transparent;
-    transition: all 0.5s ease-in-out;
-}
-
-.footer>.content>div>button:hover {
-    cursor: pointer;
-    border-bottom-color: #000;
-}
-
-.copyright {
-    width: 100vw;
-    text-align: right;
-}
-
-.footer {
-    /* position: relative; */
-    position: static;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-    background-color: #ddd;
-    width: 100vw;
-    margin-top: 400px;
-}
+    
+    .basic-information-card {
+        background-color: #ddd;
+        height: 79.50vh;
+        width: 55vh;
+        border-radius: 30px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        transition: 0.3s;
+    }
+    
+    .basic-information-card>img {
+        mix-blend-mode: color-burn;
+        /* filter: brightness(95%); */
+        width: 43vh;
+        background-color: #fff;
+        margin-top: 10px;
+        border-radius: 35px;
+    }
+    
+    .basic-information-card>h1 {
+        font-weight: 100;
+    }
+    
+    .basic-information-card:hover {
+        transform: translateY(-30px);
+        cursor: pointer;
+    }
+    
+    .basic-information {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cards {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+    
+    .mini-about-us-section,
+    .about-us-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 1.5s ease;
+    }
+    
+    .mini-about-us-section>.content,
+    .about-us-section>.content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .mini-about-us-section>.content>p,
+    .about-us-section>.content>p {
+        width: 400px;
+    }
+    
+    .mini-about-us-section>#know-more {
+        position: relative;
+        width: 40vh;
+        height: 5vh;
+        border: 1px solid #000;
+        background-color: #000;
+        color: #fff;
+        border-radius: 5px;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .mini-about-us-section>#know-more:hover {
+        background-color: transparent !important;
+        color: #000;
+        cursor: pointer;
+    }
+    
+    .admission-form,
+    .admission-form>form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+        align-items: center;
+        width: 100vw;
+    }
+    
+     ::-webkit-input-placeholder {
+        color: #000;
+    }
+    
+    .admission-form>form>input {
+        height: 4vh;
+        border-color: transparent transparent #000 transparent;
+        outline: none;
+        width: 80vw;
+        margin: 0 0 0 10vw;
+    }
+    
+    .admission-form>form>button {
+        width: 35vh;
+        height: 5vh;
+        border-radius: 5px;
+        border-color: transparent;
+        position: relative;
+    }
+    
+    .class {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .admission-form>form>button:hover {
+        background-color: #aaaaaac2;
+        cursor: pointer;
+    }
+    
+    .contact-detail {
+        width: 60vh;
+        height: 40vh;
+        background: #ddd;
+        margin-left: 20px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    
+    .contact-detail:hover,
+    #gmf:hover {
+        transform: scale(1.01);
+        cursor: pointer;
+    }
+    
+    #line {
+        height: 25vh;
+        width: .1vh;
+        background-color: #000;
+    }
+    
+    #gmf {
+        border: none;
+        width: 60vh;
+        height: 40vh;
+    }
+    
+    .deatails {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .footer>.content {
+        height: 30vw;
+        width: 99vw;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin-top: 1vw;
+    }
+    
+    .footer>.content>.logo>img {
+        height: 25vh;
+        width: 25vh;
+        mix-blend-mode: color-burn;
+    }
+    
+    .footer>.content>div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .footer>.content>div>span {
+        margin-right: px;
+    }
+    
+    .footer>.content>div>button {
+        border-color: transparent;
+        background-color: transparent;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .footer>.content>div>button:hover {
+        cursor: pointer;
+        border-bottom-color: #000;
+    }
+    
+    .copyright {
+        width: 100vw;
+        text-align: right;
+    }
+    
+    .footer {
+        /* position: relative; */
+        position: static;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        background-color: #ddd;
+        width: 100vw;
+        margin-top: 400px;
+    }
+    
+    .navbarformobile {
+        display: none;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .nav {
+            display: none;
+        }
+        .navbarformobile {
+            display: flex;
+            justify-content: space-between;
+            gap: 80px;
+            /* position: relative; */
+        }
+        .navbarformobile>.logo {
+            padding: 10px;
+            font-family: arial;
+            font-size: 2.5vh;
+            z-index: 10000;
+        }
+        .navbarformobile>.hamburger-icon {
+            background: url('./Assets/Image/hamburger-menu.png');
+            width: 65px;
+            height: 65px;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: 0.1s;
+            z-index: 10000;
+        }
+        .navbarformobile>.hamburger-icon:hover {
+            cursor: pointer;
+        }
+        .navbarformobile>.hamburger-icon:active {
+            transform: scale(0.5);
+        }
+        .navlinks {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            background-color: #fff;
+            z-index: 1000;
+            top: 0;
+            /* position: absolute; */
+        }
+        .navlinks>button {
+            height: 10vh;
+            background: #0000;
+            border: transparent;
+        }
+        .navlinks>button:hover,
+        .navlinks>button:active {
+            background: #aaa;
+        }
+        * {
+            z-index: 0;
+        }
+        .basic-information-card {
+            /* display: flex;
+        /* flex-direction: column; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            width: 80%;
+            margin-left: 10%;
+        }
+        /* @keyframes scale {
+            0% {
+                transform: scale(0.5);
+            }
+            100% {
+                transform: scale(1);
+            }
+        } */
+        .about-us-section>.content,
+        .mini-about-us-section>.content {
+            display: flex !important;
+            flex-direction: column-reverse !important;
+        }
+        .admissions-banner {
+            display: flex !important;
+            flex-direction: column-reverse !important;
+            width: 100%;
+            height: 100vh;
+        }
+        .admissions-banner>.text {
+            gap: 10px;
+            width: 100%;
+            height: 70vh;
+            text-align: center;
+        }
+        .admissions-banner>.text>*,
+        .admissions-banner>* {
+            overflow: hidden;
+        }
+        .admissions-banner>.text>* {
+            margin-top: 10px;
+        }
+        .admissions-banner>.text {
+            display: flex;
+            /* flex-wrap: wrap; */
+            width: 100vw;
+            /* height: 60vh; */
+            overflow: hidden;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            overflow: hidden;
+            /* z-index: 0; */
+        }
+        .admissions-banner>.text>h1 {
+            padding-bottom: 200px;
+        }
+        /* {
+            display: flex;
+            flex-direction: column;
+        } */
+    }

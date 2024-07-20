@@ -6,11 +6,13 @@ import Footer from "./Components/Footer"
 import Aboutus from "./Pages/About-us"
 import Form from "./Pages/Form"
 import Contactus from "./Pages/Contact us"
+import NavbarForMoblie from "./Components/Navbar For Mobile"
 
 const App = () => {
   return (
     <>
-    <Navbar/>
+  <Navbar/>
+  <NavbarForMoblie/>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/About-us" element={<Aboutus/>}/>

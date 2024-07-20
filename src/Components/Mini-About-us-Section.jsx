@@ -12,7 +12,9 @@ const MiniAboutusSection = () => {
       </p>
       <img src={govtofwblogo} alt="" />
       </div>
-      <button id="know-more">Know More</button>
+      <button id="know-more" onClick={()=>{
+  document.location.href = "/about-us"
+}}>Know More</button>
     </section>
   );
 }
