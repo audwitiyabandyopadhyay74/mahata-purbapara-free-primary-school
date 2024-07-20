@@ -1,4 +1,9 @@
 import logo from '../Assets/Image/education-board-img.png'
+
+const style = {
+  height: '80vh',
+}
+
 const Home = () =>{
   document.location.href = "/"
 }
@@ -20,7 +25,7 @@ const Footer = () => {
   const Year = new Date().getFullYear();
     return (
     <footer className="footer">
-  <div className="content">
+  <div className="content" style={style}>
   <div className="logo"><img src={logo} alt="" /></div>
       <div className="quick-links">
         <span>Quick Links</span>
