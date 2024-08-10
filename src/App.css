@@ -5,11 +5,13 @@
         font-family: Arial, Helvetica, sans-serif;
         transition: all 1.5s ease;
         box-sizing: border-box;
+        overflow: hidden;
     }
     
      :root {
         -ms-overflow-style: none;
         scrollbar-width: none;
+        overflow: scroll;
     }
     /* 
 *:hover {
@@ -42,24 +44,26 @@
     }
     
     body {
-        background-color: #fff;
-        color: #000;
+        background-color: #000;
+        color: #fff;
+        perspective: 5000;
     }
     
     .nav {
-        padding-left: 10px;
-        padding-right: 10px;
         width: 100%;
-        height: 8vh;
+        height: 12vh;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        z-index: 1000;
+        background: #000;
+        /* margin-bottom: 100px; */
+        padding-left: 10px;
     }
     
     .nav>.logo {
         font-family: arial;
         font-size: 2.5vh;
+        color: #000;
     }
     
     .nav>.links {
@@ -68,24 +72,38 @@
         flex-direction: row;
         justify-content: space-between;
         padding-right: 20px;
+        color: #fff;
+        /* background-color: #000; */
     }
     
     .nav>.links>button {
         border-color: transparent;
         background-color: transparent;
         transition: all 0.5s ease-in-out;
+        color: #000;
+        /* margin-top: 40px; */
+        height: 5vh;
+        width: 10vh;
+        border-radius: 5px;
+        /* background-color: #000; */
+        /* transform: skew(100deg); */
     }
     
     .links button::before {
         background-color: #d87a00;
         width: 100px !important;
         height: 5px !important;
+        /* background-color: #000; */
     }
     
     .nav>.links>button:hover {
         /*    cursor: url('./assets/react.svg'), auto;*/
         cursor: pointer;
-        border-bottom-color: #000;
+        /* border-bottom-color: #000; */
+        /* background-color: #000; */
+        background: #fff;
+        color: #000;
+        /* transform: skew(10deg); */
     }
     
     .banner {
@@ -141,13 +159,20 @@
         width: 45vh;
         height: 50vh;
         border-radius: 30px;
-        background-color: #ddd;
+        background-color: #080808e0;
         margin-top: 30px;
+        border: #fff solid;
         transition: all .3s ease-in-out;
+        /* animation: move 10s linear infinite; */
+        /* animation-iteration-count: infinite; */
+        /* animation-timing-function: 1s; */
+        /* transform: rotate(180deg); */
     }
     
     .Feature:hover {
-        transform: translateY(-30px);
+        /* transform: translateY(-30px); */
+        /* transform: scale(1.2); */
+        transform: skew(10deg);
         cursor: pointer;
     }
     
@@ -172,6 +197,17 @@
         position: relative;
         bottom: -10px;
         left: 5px;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    @keyframes move {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
     }
     
     .Features {
@@ -199,6 +235,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        margin-top: 150px;
     }
     
     .admissions-banner>.text {
@@ -206,6 +243,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        overflow: hidden;
     }
     
     .admissions-banner>.text>h1 {
@@ -217,21 +255,30 @@
     }
     
     .admissions-banner>.text>button {
+        margin-top: 20px;
         width: 40vh;
-        height: 6vh;
-        background-color: #000;
-        color: #fff;
+        height: 7vh;
+        background-color: #fff;
+        color: #000;
         transition: all 1s ease;
         border-radius: 5px;
         border: #000 solid;
+        transition: .708s;
+        transform: skew(10deg);
+        overflow: hidden;
     }
     
     .admissions-banner>.text>button:hover,
     .admissions-banner>.text>button:active,
     .admissions-banner>.text>button:focus {
-        background-color: transparent;
+        background-color: #000;
         color: #000;
         cursor: pointer;
+        border: #fff solid;
+        color: #fff;
+        transform: rotateX(10deg);
+        overflow: hidden;
+        /* padding-bottom: 10px; */
     }
     
     .admissions-banner>img {
@@ -249,6 +296,10 @@
     z-index: 100;
 } */
     
+    .basic-information {
+        margin-top: 100px;
+    }
+    
     .basic-information-card {
         background-color: #ddd;
         height: 79.50vh;
@@ -260,10 +311,13 @@
         align-items: center;
         margin-top: 30px;
         transition: 0.3s;
+        background-color: #080808e0;
+        gap: 30px;
+        padding: 4px;
     }
     
     .basic-information-card>img {
-        mix-blend-mode: color-burn;
+        /* mix-blend-mode: color-burn; */
         /* filter: brightness(95%); */
         width: 43vh;
         background-color: #fff;
@@ -275,8 +329,10 @@
         font-weight: 100;
     }
     
-    .basic-information-card:hover {
-        transform: translateY(-30px);
+    .basic-information-card:hover,
+    .basic-information-card:active,
+    .basic-information-card:focus {
+        transform: rotateX(50deg);
         cursor: pointer;
     }
     
@@ -291,6 +347,7 @@
         align-items: center;
         gap: 50px;
         flex-wrap: wrap;
+        padding-bottom: 50px;
     }
     
     .mini-about-us-section,
@@ -318,18 +375,23 @@
     .mini-about-us-section>#know-more {
         position: relative;
         width: 40vh;
-        height: 5vh;
+        height: 7vh;
         border: 1px solid #000;
-        background-color: #000;
-        color: #fff;
+        background-color: #fff;
+        color: #000;
         border-radius: 5px;
         transition: all 0.5s ease-in-out;
+        margin-top: 20px;
+        padding: 5px;
+        transform: skew(10deg);
     }
     
     .mini-about-us-section>#know-more:hover {
         background-color: transparent !important;
-        color: #000;
+        color: #fff;
         cursor: pointer;
+        border: #fff solid;
+        transform: rotateX(10deg);
     }
     
     .admission-form,
@@ -506,7 +568,7 @@
             width: 100%;
             height: 100vh;
             position: fixed;
-            background-color: #fff;
+            background-color: #000;
             z-index: 1000;
             top: 0;
             /* position: absolute; */
@@ -515,10 +577,11 @@
             height: 10vh;
             background: #0000;
             border: transparent;
+            color: #fff;
         }
         .navlinks>button:hover,
         .navlinks>button:active {
-            background: #aaa;
+            background: #252525ea;
         }
         * {
             z-index: 0;
