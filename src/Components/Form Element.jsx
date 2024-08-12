@@ -38,7 +38,7 @@ const FormElement = () => {
 <span><input type="radio" name="Class" id="class4"required /> Class 4</span>
 </div>
 <input type="number" name="Annual Income" id=""  placeholder="Annual Income" required/>
-<input type="text" name="BPL No" id="" placeholder="BPLAccount No(optional):" />
+<input type="text" name="BPL No" id="" placeholder="BPL No(optional):" />
 <input type="number" name="Bank Account No:" id="Bank " placeholder=" Bank Account No(optional):" />
 <input type="text" name="IFSCE Code:" id="IFSCE Code: (optional)"  placeholder="IFSCE Code: (optional)" />
 <input type="number" name="Aadhar No:" id=""  placeholder="Aadhar(optional)" />

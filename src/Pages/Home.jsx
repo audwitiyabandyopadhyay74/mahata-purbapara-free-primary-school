@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
     <Banner/>
-   <span id="heading">Features <span id="note">ℹ️ Note: This All Services are Given by WB Govt</span> </span> 
+   <span id="heading" style={{textTransform:"capitalize", fontWeight:"700",marginTop:"100px"}}>Why Us <span id="note">ℹ️ Note: This All Services are Given by WB Govt</span> </span> 
    <Features/>
    <AdmissionsBanner/>
    <BasicInformation/>

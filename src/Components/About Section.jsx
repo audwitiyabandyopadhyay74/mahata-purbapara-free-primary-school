@@ -10,7 +10,9 @@ const AboutSection = () => {
       and this school is manged and owned by the Government of West Bengal it's falls under WBBPE Board. 
       This School was established in the year 1932 and is a Goverment school. The school is located in Mahata 
     </p>
-    <img src={govtofwblogo} alt="" />
+    <div class="img-of-about-section"style={{bacground:govtofwblogo}} >
+       <div id="bottom"> </div>
+    </div>
     </div>
   </section>
   )

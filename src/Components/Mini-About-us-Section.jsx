@@ -10,7 +10,7 @@ const MiniAboutusSection = () => {
         this school is a government school and is approved by the West Bengal ministry of education. 
         and this school is manged and owned by the Government of West Bengal it's falls under WBBPE Board. 
       </p>
-      <img src={govtofwblogo} alt="" />
+      <div className="img-of-about-section"> </div>
       </div>
       <button id="know-more" onClick={()=>{
   document.location.href = "/about-us"

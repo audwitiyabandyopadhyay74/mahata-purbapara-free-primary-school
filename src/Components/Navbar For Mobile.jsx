@@ -10,7 +10,7 @@ const Aboutus = () =>{
 }
 
 const Form = () =>{
-  document.location.replace = "http://mahatapurbaparafreprimaryadmissionform.audwitiyabandyopadhyay.org.in/"
+  document.location.href = "/form"
 }
 
 const Contactus = () =>{

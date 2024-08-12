@@ -7,6 +7,7 @@ import Aboutus from "./Pages/About-us"
 import Form from "./Pages/Form"
 import Contactus from "./Pages/Contact us"
 import NavbarForMoblie from "./Components/Navbar For Mobile"
+import SoftCopiesofbooks from "./Pages/Soft Copies of books"
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/About-us" element={<Aboutus/>}/>
         <Route path="/Form" element={<Form/>}/>
         <Route path="/Contact-us" element={<Contactus/>}/>
+        <Route path="/softcopiesofbooks" element={<SoftCopiesofbooks/>}/>
       </Routes>
     <Footer/>
     </>

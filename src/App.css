@@ -1,23 +1,23 @@
-    * {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        font-family: Arial, Helvetica, sans-serif;
-        transition: all 1.5s ease;
-        box-sizing: border-box;
-        overflow: hidden;
-    }
-    
-     :root {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-        overflow: scroll;
-    }
-    /* 
+        * {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: all 0.5s ease;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        
+         :root {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            overflow: scroll;
+        }
+        /* 
 *:hover {
     cursor: url('./assets/Image/react.svg'), auto;
 } */
-    /* 
+        /* 
 ::-webkit-scrollbar-track {
     height: 10px;
 }
@@ -33,258 +33,262 @@
 ::-webkit-scrollbar {
     height: 10px;
 } */
-    
-     ::-webkit-file-upload-button {
-        margin-top: 20px;
-        width: 40%;
-        height: 4vh;
-        background-color: #000;
-        color: #fff;
-        display: none;
-    }
-    
-    body {
-        background-color: #000;
-        color: #fff;
-        perspective: 5000;
-    }
-    
-    .nav {
-        width: 100%;
-        height: 12vh;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: #000;
-        /* margin-bottom: 100px; */
-        padding-left: 10px;
-    }
-    
-    .nav>.logo {
-        font-family: arial;
-        font-size: 2.5vh;
-        color: #000;
-    }
-    
-    .nav>.links {
-        width: 25%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-right: 20px;
-        color: #fff;
-        /* background-color: #000; */
-    }
-    
-    .nav>.links>button {
-        border-color: transparent;
-        background-color: transparent;
-        transition: all 0.5s ease-in-out;
-        color: #000;
-        /* margin-top: 40px; */
-        height: 5vh;
-        width: 10vh;
-        border-radius: 5px;
-        /* background-color: #000; */
-        /* transform: skew(100deg); */
-    }
-    
-    .links button::before {
-        background-color: #d87a00;
-        width: 100px !important;
-        height: 5px !important;
-        /* background-color: #000; */
-    }
-    
-    .nav>.links>button:hover {
-        /*    cursor: url('./assets/react.svg'), auto;*/
-        cursor: pointer;
-        /* border-bottom-color: #000; */
-        /* background-color: #000; */
-        background: #fff;
-        color: #000;
-        /* transform: skew(10deg); */
-    }
-    
-    .banner {
-        width: 100%;
-        height: 90vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: url("https://th.bing.com/th/id/R.b932eb9d486c2aa9b0b2edbbb03d0c61?rik=xzv51Lph6xXaYQ&riu=http%3a%2f%2ftrendingweblog.com%2fwp-content%2fuploads%2f2018%2f07%2fdelhi_public_school.jpg&ehk=JqHj4GhI9JD4qam6RLgdpFp4U5DWU2wBhqhvZZ38ACs%3d&risl=&pid=ImgRaw&r=0");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        flex-direction: column;
-        margin-top: -100px;
-        z-index: 0;
-    }
-    
-    .banner>.text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .banner>.text>span:first-child {
-        font-size: 50px;
-    }
-    
-    .banner>.text>button {
-        width: 20vh;
-        height: 5vh;
-        border-radius: 5px;
-        background-color: #000;
-        color: #fff;
-        border: black solid;
-        transition: all 0.5s ease;
-    }
-    
-    .banner>.text>button:hover {
-        background-color: transparent;
-        border-color: #000;
-        color: #000;
-        cursor: pointer;
-    }
-    
-    #heading {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        font-size: 4.5vh;
-    }
-    
-    .Feature {
-        width: 45vh;
-        height: 50vh;
-        border-radius: 30px;
-        background-color: #080808e0;
-        margin-top: 30px;
-        border: #fff solid;
-        transition: all .3s ease-in-out;
-        /* animation: move 10s linear infinite; */
-        /* animation-iteration-count: infinite; */
-        /* animation-timing-function: 1s; */
-        /* transform: rotate(180deg); */
-    }
-    
-    .Feature:hover {
-        /* transform: translateY(-30px); */
-        /* transform: scale(1.2); */
-        transform: skew(10deg);
-        cursor: pointer;
-    }
-    
-    .Feature>img {
-        width: 42vh;
-        margin-top: 1vh;
-        margin-left: 1vh;
-        border-radius: 20px;
-        height: 25vh;
-        background-color: #aaa;
-    }
-    
-    .Feature>span {
-        display: flex;
-        justify-content: center;
-        font-size: 2.5vh;
-        text-align: center;
-        width: 45vh;
-    }
-    
-    .Feature>p {
-        position: relative;
-        bottom: -10px;
-        left: 5px;
-        text-align: center;
-        padding: 10px;
-    }
-    
-    @keyframes move {
-        0% {
-            transform: rotate(0deg);
+        
+         ::-webkit-file-upload-button {
+            margin-top: 20px;
+            width: 40%;
+            height: 4vh;
+            background-color: #000;
+            color: #fff;
+            display: none;
         }
-        100% {
-            transform: rotate(360deg);
+        
+        body {
+            background-color: #000;
+            color: #fff;
+            perspective: 5000;
         }
-    }
-    
-    .Features {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-    }
-    
-    #note {
-        font-size: 17px;
-        margin-top: 25px;
-        position: absolute;
-        right: 40px;
-    }
-    
-    .admissions-banner {
-        /* background-image: url('../src/Assets/Image/Admissions Are Closed For This Year.png'); */
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 150px;
-    }
-    
-    .admissions-banner>.text {
-        margin-left: 9vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        overflow: hidden;
-    }
-    
-    .admissions-banner>.text>h1 {
-        font-size: 10vh;
-    }
-    
-    .admissions-banner>.text>p {
-        font-size: 5vh;
-    }
-    
-    .admissions-banner>.text>button {
-        margin-top: 20px;
-        width: 40vh;
-        height: 7vh;
-        background-color: #fff;
-        color: #000;
-        transition: all 1s ease;
-        border-radius: 5px;
-        border: #000 solid;
-        transition: .708s;
-        transform: skew(10deg);
-        overflow: hidden;
-    }
-    
-    .admissions-banner>.text>button:hover,
-    .admissions-banner>.text>button:active,
-    .admissions-banner>.text>button:focus {
-        background-color: #000;
-        color: #000;
-        cursor: pointer;
-        border: #fff solid;
-        color: #fff;
-        transform: rotateX(10deg);
-        overflow: hidden;
-        /* padding-bottom: 10px; */
-    }
-    
-    .admissions-banner>img {
-        word-wrap: break-word;
-    }
-    /* .admissions-banner>.skew1 {
+        
+        .nav {
+            width: 100%;
+            height: 12vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #000;
+            /* margin-bottom: 100px; */
+            padding-left: 10px;
+        }
+        
+        .nav>.logo {
+            font-family: arial;
+            font-size: 2.5vh;
+            color: #fff;
+        }
+        
+        .nav>.links {
+            width: 25%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-right: 20px;
+            color: #fff;
+            /* background-color: #000; */
+        }
+        
+        .nav>.links>button {
+            border-color: transparent;
+            background-color: transparent;
+            transition: all 0.5s ease-in-out;
+            color: #fff;
+            /* margin-top: 40px; */
+            height: 5vh;
+            width: 10vh;
+            border-radius: 5px;
+            /* background-color: #000; */
+            /* transform: skew(100deg); */
+        }
+        
+        .links button::before {
+            background-color: #d87a00;
+            width: 100px !important;
+            height: 5px !important;
+            /* background-color: #000; */
+        }
+        
+        .nav>.links>button:hover {
+            /*    cursor: url('./assets/react.svg'), auto;*/
+            cursor: pointer;
+            /* border-bottom-color: #000; */
+            /* background-color: #000; */
+            background: #fff;
+            color: #000;
+            /* transform: skew(10deg); */
+        }
+        
+        .banner {
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("https://th.bing.com/th/id/R.b932eb9d486c2aa9b0b2edbbb03d0c61?rik=xzv51Lph6xXaYQ&riu=http%3a%2f%2ftrendingweblog.com%2fwp-content%2fuploads%2f2018%2f07%2fdelhi_public_school.jpg&ehk=JqHj4GhI9JD4qam6RLgdpFp4U5DWU2wBhqhvZZ38ACs%3d&risl=&pid=ImgRaw&r=0");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            flex-direction: column;
+            margin-top: -100px;
+            z-index: 0;
+        }
+        
+        .banner>.text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .banner>.text>span:first-child {
+            font-size: 50px;
+        }
+        
+        .banner>.text>button {
+            width: 20vh;
+            height: 5vh;
+            border-radius: 5px;
+            background-color: #000;
+            color: #fff;
+            border: black solid;
+            transition: all 0.5s ease;
+            transform: skew(10deg);
+            /* transform: scale(1.01); */
+        }
+        
+        .banner>.text>button:hover {
+            background-color: transparent;
+            border-color: #000;
+            color: #000;
+            cursor: pointer;
+            transform: skew(0deg);
+        }
+        
+        #heading {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            font-size: 4.5vh;
+        }
+        
+        .Feature {
+            width: 45vh;
+            height: 50vh;
+            border-radius: 30px;
+            background-color: #080808e0;
+            margin-top: 30px;
+            border: #fff solid;
+            transition: all .3s ease-in-out;
+            /* animation: move 10s linear infinite; */
+            /* animation-iteration-count: infinite; */
+            /* animation-timing-function: 1s; */
+            /* transform: rotate(180deg); */
+        }
+        
+        .Feature:hover {
+            /* transform: translateY(-30px); */
+            /* transform: scale(1.2); */
+            transform: skew(10deg);
+            cursor: pointer;
+        }
+        
+        .Feature>img {
+            width: 42vh;
+            margin-top: 1vh;
+            margin-left: 1vh;
+            border-radius: 20px;
+            height: 25vh;
+            background-color: #aaa;
+        }
+        
+        .Feature>span {
+            display: flex;
+            justify-content: center;
+            font-size: 2.5vh;
+            text-align: center;
+            width: 45vh;
+        }
+        
+        .Feature>p {
+            position: relative;
+            bottom: -10px;
+            left: 5px;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        @keyframes move {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .Features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        
+        #note {
+            font-size: 17px;
+            margin-top: 25px;
+            position: absolute;
+            right: 40px;
+        }
+        
+        .admissions-banner {
+            /* background-image: url('../src/Assets/Image/Admissions Are Closed For This Year.png'); */
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 150px;
+        }
+        
+        .admissions-banner>.text {
+            margin-left: 9vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .admissions-banner>.text>h1 {
+            font-size: 10vh;
+        }
+        
+        .admissions-banner>.text>p {
+            font-size: 5vh;
+        }
+        
+        .admissions-banner>.text>button {
+            margin-top: 20px;
+            width: 40vh;
+            height: 7vh;
+            background-color: #fff;
+            color: #000;
+            transition: all 1s ease;
+            border-radius: 5px;
+            border: #000 solid;
+            transition: .708s;
+            transform: skew(10deg);
+            overflow: hidden;
+        }
+        
+        .admissions-banner>.text>button:hover,
+        .admissions-banner>.text>button:active,
+        .admissions-banner>.text>button:focus {
+            background-color: #000;
+            color: #000;
+            cursor: pointer;
+            border: #fff solid;
+            color: #fff;
+            transform: rotateX(10deg);
+            overflow: hidden;
+            /* padding-bottom: 10px; */
+        }
+        
+        .admissions-banner>img {
+            word-wrap: break-word;
+        }
+        /* .admissions-banner>.skew1 {
     width: 250px !important;
     height: 250px !important;
     background-color: #000000;
@@ -295,306 +299,429 @@
     margin-right: -350px;
     z-index: 100;
 } */
-    
-    .basic-information {
-        margin-top: 100px;
-    }
-    
-    .basic-information-card {
-        background-color: #ddd;
-        height: 79.50vh;
-        width: 55vh;
-        border-radius: 30px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 30px;
-        transition: 0.3s;
-        background-color: #080808e0;
-        gap: 30px;
-        padding: 4px;
-    }
-    
-    .basic-information-card>img {
-        /* mix-blend-mode: color-burn; */
-        /* filter: brightness(95%); */
-        width: 43vh;
-        background-color: #fff;
-        margin-top: 10px;
-        border-radius: 35px;
-    }
-    
-    .basic-information-card>h1 {
-        font-weight: 100;
-    }
-    
-    .basic-information-card:hover,
-    .basic-information-card:active,
-    .basic-information-card:focus {
-        transform: rotateX(50deg);
-        cursor: pointer;
-    }
-    
-    .basic-information {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .cards {
-        display: flex;
-        align-items: center;
-        gap: 50px;
-        flex-wrap: wrap;
-        padding-bottom: 50px;
-    }
-    
-    .mini-about-us-section,
-    .about-us-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: all 1.5s ease;
-    }
-    
-    .mini-about-us-section>.content,
-    .about-us-section>.content {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .mini-about-us-section>.content>p,
-    .about-us-section>.content>p {
-        width: 400px;
-    }
-    
-    .mini-about-us-section>#know-more {
-        position: relative;
-        width: 40vh;
-        height: 7vh;
-        border: 1px solid #000;
-        background-color: #fff;
-        color: #000;
-        border-radius: 5px;
-        transition: all 0.5s ease-in-out;
-        margin-top: 20px;
-        padding: 5px;
-        transform: skew(10deg);
-    }
-    
-    .mini-about-us-section>#know-more:hover {
-        background-color: transparent !important;
-        color: #fff;
-        cursor: pointer;
-        border: #fff solid;
-        transform: rotateX(10deg);
-    }
-    
-    .admission-form,
-    .admission-form>form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        text-align: center;
-        align-items: center;
-        width: 100vw;
-    }
-    
-     ::-webkit-input-placeholder {
-        color: #000;
-    }
-    
-    .admission-form>form>input {
-        height: 4vh;
-        border-color: transparent transparent #000 transparent;
-        outline: none;
-        width: 80vw;
-        margin: 0 0 0 10vw;
-    }
-    
-    .admission-form>form>button {
-        width: 35vh;
-        height: 5vh;
-        border-radius: 5px;
-        border-color: transparent;
-        position: relative;
-    }
-    
-    .class {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .admission-form>form>button:hover {
-        background-color: #aaaaaac2;
-        cursor: pointer;
-    }
-    
-    .contact-detail {
-        width: 60vh;
-        height: 40vh;
-        background: #ddd;
-        margin-left: 20px;
-        padding: 20px;
-        border-radius: 15px;
-    }
-    
-    .contact-detail:hover,
-    #gmf:hover {
-        transform: scale(1.01);
-        cursor: pointer;
-    }
-    
-    #line {
-        height: 25vh;
-        width: .1vh;
-        background-color: #000;
-    }
-    
-    #gmf {
-        border: none;
-        width: 60vh;
-        height: 40vh;
-    }
-    
-    .deatails {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        overflow: hidden;
-    }
-    
-    .footer>.content {
-        height: 30vw;
-        width: 99vw;
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        margin-top: 1vw;
-    }
-    
-    .footer>.content>.logo>img {
-        height: 25vh;
-        width: 25vh;
-        mix-blend-mode: color-burn;
-    }
-    
-    .footer>.content>div {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .footer>.content>div>span {
-        margin-right: px;
-    }
-    
-    .footer>.content>div>button {
-        border-color: transparent;
-        background-color: transparent;
-        transition: all 0.5s ease-in-out;
-    }
-    
-    .footer>.content>div>button:hover {
-        cursor: pointer;
-        border-bottom-color: #000;
-    }
-    
-    .copyright {
-        width: 100vw;
-        text-align: right;
-    }
-    
-    .footer {
-        /* position: relative; */
-        position: static;
-        bottom: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: space-between;
-        background-color: #ddd;
-        width: 100vw;
-        margin-top: 400px;
-    }
-    
-    .navbarformobile {
-        display: none;
-    }
-    
-    @media only screen and (max-width: 768px) {
-        .nav {
-            display: none;
+        
+        .basic-information {
+            margin-top: 100px;
         }
-        .navbarformobile {
+        
+        .basic-information-card {
+            background-color: #ddd;
+            height: 79.50vh;
+            width: 55vh;
+            border-radius: 30px;
+            text-align: center;
             display: flex;
-            /* justify-content: space-between; */
-            gap: 128px;
-            /* position: relative; */
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+            transition: 0.3s;
+            background-color: #080808e0;
+            gap: 30px;
+            padding: 4px;
         }
-        .navbarformobile>.logo {
-            padding: 10px;
-            font-family: arial;
-            font-size: 2.5vh;
-            z-index: 10000;
+        
+        .basic-information-card>img {
+            /* mix-blend-mode: color-burn; */
+            /* filter: brightness(95%); */
+            width: 43vh;
+            background-color: #fff;
+            margin-top: 10px;
+            border-radius: 35px;
         }
-        .navbarformobile>.hamburger-icon {
-            background: url('./Assets/Image/hamburger-menu.png');
-            width: 65px;
-            height: 65px;
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            transition: 0.1s;
-            z-index: 10000;
-            /* margin-left: 40px; */
+        
+        .basic-information-card>h1 {
+            font-weight: 100;
         }
-        .navbarformobile>.hamburger-icon:hover {
+        
+        .basic-information-card:hover,
+        .basic-information-card:active,
+        .basic-information-card:focus {
+            transform: rotateX(50deg);
             cursor: pointer;
         }
-        .navbarformobile>.hamburger-icon:active {
-            transform: scale(0.5);
+        
+        .basic-information {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        .navlinks {
+        
+        .cards {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            padding-bottom: 50px;
+        }
+        
+        .mini-about-us-section {
+            margin-top: 270px;
+        }
+        
+        .mini-about-us-section,
+        .about-us-section {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 40px;
-            width: 100%;
-            height: 100vh;
-            position: fixed;
-            background-color: #000;
-            z-index: 1000;
-            top: 0;
-            /* position: absolute; */
+            align-items: center;
+            transition: all 1.5s ease;
         }
-        .navlinks>button {
-            height: 10vh;
+        
+        .mini-about-us-section>.content,
+        .about-us-section>.content {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .mini-about-us-section>.content>p,
+        .about-us-section>.content>p {
+            width: 400px;
+        }
+        
+        .mini-about-us-section>#know-more {
+            position: relative;
+            width: 40vh;
+            height: 7vh;
+            border: 1px solid #000;
+            background-color: #fff;
+            color: #000;
+            border-radius: 5px;
+            transition: all 0.5s ease-in-out;
+            margin-top: 20px;
+            padding: 5px;
+            transform: skew(10deg);
+        }
+        
+        .mini-about-us-section>#know-more:hover {
+            background-color: transparent !important;
+            color: #fff;
+            cursor: pointer;
+            border: #fff solid;
+            transform: rotateX(10deg);
+        }
+        
+        .img-of-about-section {
+            width: 600px;
+            height: 600px;
+            background-image: url("./Assets/Image/government-of-west-bengal-logo.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: relative;
+        }
+        
+        #bottom {
+            height: 40%;
+            width: 600px;
+            position: absolute;
+            bottom: -40%;
+            background: linear-gradient(transparent, white);
+            transition: all ease 0.4s;
+        }
+        
+        .img-of-about-section:hover {
+            bottom: 0;
+            cursor: pointer;
+            filter: drop-shadow(10px 5px 50px #fff);
+        }
+        
+        .admission-form,
+        .admission-form>form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            text-align: center;
+            align-items: center;
+            width: 100vw;
+        }
+        
+         ::-webkit-input-placeholder {
+            color: #000;
+        }
+        
+        .admission-form>form>input {
+            height: 4vh;
+            border-color: transparent transparent #000 transparent;
             background: #0000;
-            border: transparent;
+            outline: none;
+            width: 80vw;
+            margin: 0 0 0 10vw;
             color: #fff;
         }
-        .navlinks>button:hover,
-        .navlinks>button:active {
-            background: #252525ea;
+        /* .admission-form>form>input */
+        /* Hide the default date picker icon */
+        /* Add a custom icon */
+        /*     
+    input[type="date"] {
+        background: url('../../../../Pictures/Screenshots/Screenshot\ 2024-03-22\ 110753.png') no-repeat right;
+        background-size: 20px 20px;
+        /* Adjust size as needed */
+        /* padding-right: 30px; */
+        /* Adjust padding to make space for the icon */
+        /* } */
+        
+         ::-webkit-validation-bubble {
+            /* width: 40px;
+        height: 40px; */
         }
-        * {
-            z-index: 0;
+        
+         ::-webkit-input-placeholder {
+            color: #ffffffec;
         }
-        .basic-information-card {
-            /* display: flex;
+        
+        .admission-form>form>button {
+            width: 35vh;
+            height: 5vh;
+            border-radius: 5px;
+            border-color: transparent;
+            position: relative;
+        }
+        
+        .class {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .admission-form>form>button:hover {
+            background-color: #aaaaaac2;
+            cursor: pointer;
+        }
+        
+        .contact-detail {
+            width: 60vh;
+            height: 40vh;
+            background: #080808e0;
+            margin-left: 20px;
+            padding: 20px;
+            border-radius: 15px;
+        }
+        
+        .contact-detail:hover,
+        #gmf:hover {
+            transform: scale(1.01);
+            cursor: pointer;
+        }
+        
+        #line {
+            height: 25vh;
+            width: .1vh;
+            background-color: #000;
+        }
+        
+        #gmf {
+            border: none;
+            width: 60vh;
+            height: 40vh;
+            border-radius: 15px;
+        }
+        
+        .deatails {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            overflow: hidden;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+        
+        .contact-form {
+            width: 100%;
+            height: 50vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .contact-form>form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .contact-form>form>input {
+            width: 60vh;
+            height: 6vh;
+            font-size: 17px;
+            background-color: #000;
+            border-color: transparent transparent #000 transparent;
+            outline: none;
+            color: #fff;
+            transition: all 1.5s ease-in-out;
+        }
+        
+        .contact-form>form>input:active,
+        .contact-form>form>input:hover,
+        .contact-form>form>input:focus {
+            border-bottom-color: #fffefe;
+        }
+        
+        .contact-form>form>input ::-webkit-input-placeholder {
+            color: #000000;
+        }
+        
+        .contact-form>form>button {
+            width: 30vh;
+            height: 7vh;
+            border-radius: 15px;
+        }
+        
+        .contact-form>form>button:hover {
+            background: #000;
+            border: #fff solid;
+            color: #fff;
+        }
+        
+        .contact-form>form>textarea {
+            width: 60vh;
+            height: 24vh;
+            font-size: 17px;
+            background-color: #000;
+            color: #fff;
+            border-radius: 15px;
+        }
+        
+        .footer>.content {
+            /* height: 5vw; */
+            width: 99vw;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: start;
+            position: relative;
+            margin-top: 1vw;
+            gap: 70px;
+        }
+        
+        .footer>.content>.logo>img {
+            height: 25vh;
+            width: 25vh;
+            /* mix-blend-mode: color-burn; */
+            border-radius: 100%;
+        }
+        
+        .footer>.content>div {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .footer>.content>div>span {
+            margin-right: px;
+        }
+        
+        .footer>.content>div>button {
+            border-color: transparent;
+            background-color: transparent;
+            color: #fff;
+            transition: all 0.5s ease-in-out;
+        }
+        
+        .footer>.content>div>button:hover {
+            cursor: pointer;
+            border-bottom-color: #000;
+        }
+        
+        .copyright {
+            width: 100vw;
+            text-align: right;
+            margin-top: -200px;
+            padding: 40px;
+        }
+        
+        .footer {
+            /* position: relative; */
+            position: static;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: space-between;
+            background-color: #080808e0;
+            width: 100vw;
+            height: 15vw;
+            margin-top: 400px;
+            color: #fff;
+            padding: 0px 30px 0px 10px;
+        }
+        
+        .navbarformobile {
+            display: none;
+        }
+        
+        @media only screen and (max-width: 768px),
+        (max-width: 1023px) {
+            .nav {
+                display: none;
+            }
+            .navbarformobile {
+                display: flex;
+                /* justify-content: space-between; */
+                gap: 128px;
+                justify-content: space-between;
+                padding: 10px;
+                /* position: relative; */
+            }
+            .navbarformobile>.logo {
+                padding: 10px;
+                font-family: arial;
+                font-size: 2.5vh;
+                z-index: 10000;
+            }
+            .navbarformobile>.hamburger-icon {
+                background: url('./Assets/Image/hamburger-menu.png');
+                width: 65px;
+                height: 65px;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                transition: 0.1s;
+                z-index: 10000;
+                /* margin-left: 40px; */
+            }
+            .navbarformobile>.hamburger-icon:hover {
+                cursor: pointer;
+            }
+            .navbarformobile>.hamburger-icon:active {
+                transform: scale(0.5);
+            }
+            .navlinks {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 40px;
+                width: 100%;
+                height: 100vh;
+                position: fixed;
+                background-color: #000;
+                z-index: 1000;
+                top: 0;
+                /* position: absolute; */
+            }
+            .navlinks>button {
+                height: 10vh;
+                background: #0000;
+                border: transparent;
+                color: #fff;
+            }
+            .navlinks>button:hover,
+            .navlinks>button:active {
+                background: #252525ea;
+            }
+            * {
+                z-index: 0;
+            }
+            .basic-information-card {
+                /* display: flex;
         /* flex-direction: column; */
-            /* justify-content: center; */
-            /* align-items: center; */
-            width: 80%;
-            margin-left: 10%;
-        }
-        /* @keyframes scale {
+                /* justify-content: center; */
+                /* align-items: center; */
+                width: 80%;
+                margin-left: 10%;
+            }
+            /* @keyframes scale {
             0% {
                 transform: scale(0.5);
             }
@@ -602,109 +729,117 @@
                 transform: scale(1);
             }
         } */
-        .about-us-section>.content,
-        .mini-about-us-section>.content {
-            display: flex !important;
-            flex-direction: column-reverse !important;
-            gap: 10px;
-        }
-        .admissions-banner {
-            display: flex !important;
-            flex-direction: column-reverse !important;
-            width: 100%;
-            height: 100vh;
-            gap: 10vh;
-            /* jhuhkfgufhu */
-        }
-        .admissions-banner>.text {
-            gap: 10px;
-            width: 100%;
-            height: 70vh;
-            text-align: center;
-        }
-        .admissions-banner>.text>*,
-        .admissions-banner>* {
-            overflow: hidden;
-        }
-        .admissions-banner>.text>* {
-            margin-top: 10px;
-        }
-        .admissions-banner>.text {
-            display: flex;
-            /* flex-wrap: wrap; */
-            width: 100vw;
-            /* height: 60vh; */
-            overflow: hidden;
-            align-items: center;
-            justify-content: center;
-            margin: 0;
-            overflow: hidden;
-            /* z-index: 0; */
-        }
-        .admissions-banner>.text>h1 {
-            padding-bottom: 200px;
-        }
-        /* {
+            .about-us-section>.content,
+            .mini-about-us-section>.content {
+                display: flex !important;
+                flex-direction: column-reverse !important;
+                gap: 10px;
+            }
+            .admissions-banner {
+                display: flex !important;
+                flex-direction: column-reverse !important;
+                width: 100%;
+                height: 100vh;
+                gap: 10vh;
+                /* jhuhkfgufhu */
+            }
+            .admissions-banner>.text {
+                gap: 10px;
+                width: 100%;
+                height: 70vh;
+                text-align: center;
+            }
+            .admissions-banner>.text>*,
+            .admissions-banner>* {
+                overflow: hidden;
+            }
+            .admissions-banner>.text>* {
+                margin-top: 10px;
+            }
+            .admissions-banner>.text {
+                display: flex;
+                /* flex-wrap: wrap; */
+                width: 100vw;
+                /* height: 60vh; */
+                overflow: hidden;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                overflow: hidden;
+                /* z-index: 0; */
+            }
+            .admissions-banner>.text>h1 {
+                padding-bottom: 200px;
+            }
+            /* {
             display: flex;
             flex-direction: column;
         } */
-        .deatails {
-            display: flex;
-            flex-direction: column;
-            gap: 50px;
-        }
-        .banner>.text {
-            width: 100%;
-            text-align: center;
-        }
-        #note {
-            padding-top: 10px;
-            /* margin-bottom: 10px; */
-        }
-        .Features {
-            margin-top: 30px;
-        }
-        .admissions-banner>.text {
-            width: 100%;
-            height: 170vh;
-        }
-        .admissions-banner>.text>p {
-            font-size: 20px;
-            padding-bottom: 40px;
-            /* width: 100%;
+            .deatails {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+            }
+            .banner>.text {
+                width: 100%;
+                text-align: center;
+            }
+            #note {
+                padding-top: 10px;
+                /* margin-bottom: 10px; */
+            }
+            .Features {
+                margin-top: 30px;
+            }
+            .admissions-banner>.text {
+                width: 100%;
+                height: 170vh;
+            }
+            .admissions-banner>.text>p {
+                font-size: 20px;
+                padding-bottom: 40px;
+                /* width: 100%;
             height: 40vh;
             display: flex;
             flex-wrap: wrap; */
+            }
+            #apply-now-button {
+                margin-bottom: -1px;
+                height: 20vh;
+            }
+            #know-more {
+                margin-top: 40px;
+            }
+            footer {
+                height: 1000vh;
+                align-items: center;
+            }
+            .content {
+                display: block;
+                flex-wrap: wrap;
+                padding: 10px;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                height: 100vw;
+            }
+            .quick-links {
+                height: 60vh;
+                display: block;
+            }
+            .support-link {
+                height: 60vh;
+                display: block;
+            }
+            footer>.content>div>span {
+                width: 100%;
+                text-align: center;
+            }
+            footer>.content>div>button {
+                width: 40vh;
+            }
+            .copyright {
+                margin-bottom: -400px;
+            }
         }
-        #apply-now-button {
-            margin-bottom: -1px;
-            height: 20vh;
-        }
-        #know-more {
-            margin-top: 40px;
-        }
-        footer {
-            height: 100vh;
-        }
-        .content {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            gap: 30px;
-        }
-        .quick-links {
-            height: 60vh;
-        }
-        .support-link {
-            height: 60vh;
-        }
-        footer>.content>div>span {
-            width: 100%;
-            text-align: center;
-        }
-        footer>.content>div>button {
-            width: 40vh;
-        }
-    }
