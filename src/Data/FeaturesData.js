@@ -29,26 +29,28 @@ export const FeaturesData = [{
         Imgsrc: [Img4],
         Name: "Free Soft Copy of Books",
         Description: "Free Soft Copy of Books .Note: This Soft Book can't be selled . its ilegal."
-    }, {
-        Id: 5,
-        Imgsrc: [Img5],
-        Name: "Free Uniform of School",
-        Description: "Free Uniform of School"
-
-    }, {
-        Id: 6,
-        Imgsrc: [Img6],
-        Name: "Three Tests Are There in a Year",
-        Description: "Three Tests Are There in a Year. Test are 1st Semester, 2and Semester, 3rd Semester"
-    }, {
-        Id: 7,
-        Imgsrc: [Img7],
-        Name: "4 Teachers are There",
-        Description: "4 Teachers are There"
-    }, {
-        Id: 8,
-        Imgsrc: [Img8],
-        Name: "Online Admissions are available ",
-        Description: "Online Admissions are available for students"
-    }
+    },
 ]
+
+export const AtlastData = [{
+    Id: 5,
+    Imgsrc: [Img5],
+    Name: "Free Uniform of School",
+    Description: "Free Uniform of School"
+
+}, {
+    Id: 6,
+    Imgsrc: [Img6],
+    Name: "Three Tests Are There in a Year",
+    Description: "Three Tests Are There in a Year. Test are 1st Semester, 2and Semester, 3rd Semester"
+}, {
+    Id: 7,
+    Imgsrc: [Img7],
+    Name: "4 Teachers are There",
+    Description: "4 Teachers are There"
+}, {
+    Id: 8,
+    Imgsrc: [Img8],
+    Name: "Online Admissions are available ",
+    Description: "Online Admissions are available for students"
+}]
