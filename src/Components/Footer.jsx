@@ -24,8 +24,8 @@ const Contactus = () =>{
 const Footer = () => {
   const Year = new Date().getFullYear();
     return (
-    <footer className="footer">
-  <div className="content" style={style}>
+    <footer className="footer sm: h-[80vh]">
+  <div className="content">
   <div className="logo"><img src={logo} alt="" /></div>
       <div className="quick-links">
         <span>Quick Links</span>
@@ -36,8 +36,9 @@ const Footer = () => {
         <span>Support Links</span>
       <button onClick={Contactus}>Contact us</button>
       </div>
-  </div>
 <div className="copyright">©️Copyright {Year} All Rights Reserved</div>
+
+  </div>
     </footer>
   );
 }

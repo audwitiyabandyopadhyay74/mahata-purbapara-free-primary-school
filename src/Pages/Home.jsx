@@ -13,6 +13,8 @@ const Home = () => {
    <AdmissionsBanner/>
    <BasicInformation/>
    <MiniAboutusSection/>
+   {/* <h1 class="text-5xl bg-slate-100 w-screen h-screen flex content-center justify-center">hi</h1>
+    */}
     </>
   )
 }
