@@ -24,7 +24,7 @@ const Contactus = () =>{
 const Footer = () => {
   const Year = new Date().getFullYear();
     return (
-    <footer className="footer sm: h-[80vh]">
+    <footer className="footer">
   <div className="content">
   <div className="logo"><img src={logo} alt="" /></div>
       <div className="quick-links">

@@ -1,4 +1,6 @@
-import React,{useEffect} from "react"
+import React from "react"
+import { GiSaphir } from "react-icons/gi"
+import { Link } from "react-router-dom"
 
 const Home = () =>{
   document.location.href = "/"
@@ -18,17 +20,36 @@ const Contactus = () =>{
 
 
 
-const Navbar = () => {
-  // var tl = gsap.timeline();
+const Navbar = () => {  
+//   var tl = gsap.timeline(); 
 
-  // tl.from("button",{
+//   tl.from(".nav>button",{
+//     y:-20,
+// duration:1,
+// stagger:1
+//   })
 
-  //   opacity:100,
-  //   duration:1, 
-  //   delay:0.5
-    
-  // })
-    // tl.from(".nav", {opacity:0, duration:1, y:-100, ease:"back.out(1.7)"})
+let isDone = true;
+
+  
+
+  if(isDone){
+    gsap.to("button",{
+  y:0
+    })
+    isDone = false;
+
+  }else{
+    gsap.to("button",{
+      y:-12,
+  duration:1,
+  stagger:1,
+    })
+    isDone = true;
+  }
+
+
+  //   tl.from(".nav", {opacity:0, duration:1, y:-100, ease:"back.out(1.7)"})
 
   return (
     <nav className="nav" style={{position:"fixed"}}>

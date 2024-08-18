@@ -28,12 +28,12 @@ const Contactus = () => {
   };
   return (
     <>
- <div className="deatails">
+ <div className="deatails mt-[200px]">
  <ContactDetail/> 
-    <div id="line"></div>
+    {/* <div id="line"></div> */}
     <GoogleMaps/>
  </div>
- <div className="contact-form">
+ <div className="contact-form h-[100vh] w-screen">
       <form onSubmit={onSubmit}>
         <input type="text" name="name" placeholder="Enter your name" required/>
         <input type="email" name="email"  placeholder="Enter your Email"required/>
