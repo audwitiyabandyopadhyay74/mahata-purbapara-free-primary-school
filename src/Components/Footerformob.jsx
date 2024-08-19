@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../Assets/Image/image-removebg-preview.png'
+import logo from '../Assets/Image/1-on-1-mentorship.png'
 
 const style = {
   height: '80vh',

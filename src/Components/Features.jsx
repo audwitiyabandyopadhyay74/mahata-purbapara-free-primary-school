@@ -19,7 +19,7 @@ FeaturesData.map((FeaturesData) => (
 }
 </div>
 </Marquee>
-<Marquee play={true} pauseOnHover={false} direction={"left"} speed	={150} loop={100}>
+<Marquee play={true} pauseOnHover={false} direction={"right"} speed	={150} loop={100}>
 
 <div className="bottom"  style={{display:"flex",flexWrap:"wrap"}}>
 {

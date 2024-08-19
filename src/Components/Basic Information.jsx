@@ -6,7 +6,7 @@ const BasicInformation = () => {
   return (
     <div className='basic-information'>
       <span id="heading">Basic Information</span>
-      <Marquee play={true} pauseOnHover={false} direction={"right"} speed	={150} loop={100}>
+      <Marquee play={true} pauseOnHover={false} direction={"left"} speed	={150} loop={100}>
       <div className="cards">
 {
     BasicInformationData.map((BasicInformationData) =>

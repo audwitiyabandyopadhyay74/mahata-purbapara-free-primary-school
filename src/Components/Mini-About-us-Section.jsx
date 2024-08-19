@@ -1,7 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
+import React,{useRef,useLayoutEffect} from 'react';
 import govtofwblogo from "../Assets/Image/government-of-west-bengal-logo.png"
 
-const MiniAboutusSection = () => {
+
+const MiniAboutusSection = ({toggleModal}) => {
 /* The `gsap.to(".content", { x: 1000, duration: 2, delay: 1 })` code snippet is using the GSAP
 (GreenSock Animation Platform) library to animate the element with the class name "content". */
   // gsap.to(".content",{
@@ -9,16 +11,29 @@ const MiniAboutusSection = () => {
   //   duration:2,
   //   delay:1
   // })
+  const box = useRef();
 
-  gsap.to(".p",{
-  x:1500,
-  rotate:360,
-  duration:1.5,
-  delay:1
+
+
+  gsap.to(".box",{
+    scale:10,
+y:-10,
+    delay:1,
+    duration:2
   })
 
+  // gsap.to(".p",{
+  // x:1500,
+  // rotate:360,
+  // duration:1.5,
+  // delay:1
+  // })
+
+
   return (
-    <section className='mini-about-us-section'>
+  <div >
+
+<section ref={box} className='mini-about-us-section'>
       <h1 id="heading">About us</h1>
 <div className="content">
       <p className="p px-1500" style={{opacity:"1",marginLeft:"0"} }>
@@ -30,7 +45,8 @@ const MiniAboutusSection = () => {
       <button id="know-more" onClick={()=>{
   document.location.href = "/about-us"
 }}>Know More</button>
-    </section>
+
+    </section></div>
   );
 }
 
