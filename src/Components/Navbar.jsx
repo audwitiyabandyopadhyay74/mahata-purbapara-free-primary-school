@@ -1,6 +1,5 @@
 import React from "react"
-import { GiSaphir } from "react-icons/gi"
-import { Link } from "react-router-dom"
+
 
 const Home = () =>{
   document.location.href = "/"
