@@ -35,7 +35,7 @@ const Footer = () => {
       <div className="support-link">
         <span>Support Links</span>
       <button onClick={Contactus}>Contact us</button>
-      </div>
+      </div> <br /><br /><br />
 <div className="copyright">©️Copyright {Year} All Rights Reserved</div>
 
   </div>

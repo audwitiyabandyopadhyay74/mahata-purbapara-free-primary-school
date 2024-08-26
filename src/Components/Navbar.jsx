@@ -28,24 +28,24 @@ const Navbar = () => {
 // stagger:1
 //   })
 
-let isDone = true;
+// let isDone = true;
 
   
 
-  if(isDone){
-    gsap.to("button",{
-  y:0
-    })
-    isDone = false;
+//   if(isDone){
+//     gsap.to("button",{
+//   y:0
+//     })
+//     isDone = false;
 
-  }else{
-    gsap.to("button",{
-      y:-12,
-  duration:1,
-  stagger:1,
-    })
-    isDone = true;
-  }
+//   }else{
+//     gsap.to("button",{
+//       y:-12,
+//   duration:1,
+//   stagger:1,
+//     })
+//     isDone = true;
+//   }
 
 
   //   tl.from(".nav", {opacity:0, duration:1, y:-100, ease:"back.out(1.7)"})

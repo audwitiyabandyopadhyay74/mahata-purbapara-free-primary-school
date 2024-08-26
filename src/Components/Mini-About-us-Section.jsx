@@ -15,12 +15,12 @@ const MiniAboutusSection = ({toggleModal}) => {
 
 
 
-  gsap.to(".box",{
-    scale:10,
-y:-10,
-    delay:1,
-    duration:2
-  })
+//   gsap.to(".box",{
+//     scale:10,
+// y:-10,
+//     delay:1,
+//     duration:2
+//   })
 
   // gsap.to(".p",{
   // x:1500,
